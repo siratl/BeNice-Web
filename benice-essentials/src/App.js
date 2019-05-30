@@ -6,12 +6,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <section>
+        <section className="header">
           <h1>BNE Island</h1>
           <nav>HOME</nav>
         </section>
 
-        <section>
+        <section className="content">
           <h2>Welcome to the BNE Island</h2>
           <p>Lobby of BeNice Essentials online precence.</p>
           <p>Please select a branch to visit below.</p>
