@@ -23,17 +23,36 @@ function App() {
         </section>
 
         <section className="button-Btn">
-          <Button color="primary" size="2x">
+          <Button
+            href="https://www.beniceessentials.com"
+            target="_blank"
+            id="isActive"
+            color="primary"
+            size="2x"
+          >
             Shop Now
           </Button>
-          <Button color="primary" size="2x">
+          <Button
+            href="https://www.facebook.com/beniceessentials/"
+            target="_blank"
+            id="isActive"
+            color="primary"
+            size="2x"
+          >
             Facebook
           </Button>
-          <Button color="primary" size="2x">
+          <Button
+            href="https://www.instagram.com/beniceessentials/"
+            target="_blank"
+            id="isActive"
+            color="primary"
+            size="2x"
+          >
             Instagram
           </Button>
-          <Button color="secondary" size="2x" disabled>
+          <Button id="tooltip" color="secondary" size="2x" disabled>
             Blog
+            <span class="tooltiptext">Coming soon!</span>
           </Button>
         </section>
       </div>
