@@ -69,7 +69,7 @@
   }
 
   .content {
-    width: 60vw;
+    width: 70vw;
     margin: 2% auto 2% auto;
     font-size: 1rem;
   }
@@ -88,20 +88,24 @@
     display: flex;
     flex-direction: column;
     height: 180px;
-    width: 32vw;
+    width: 35vw;
     margin: 0 auto;
   }
   /* Important added to change button properties for mobile view. Media query doesnt have an effect until used. */
   .button-Btn #isActive {
-    height: 5vh !important; 
+    height: 35px !important; 
     width: 100% !important;
     line-height: 1.2 !important;
   }
 
   .button-Btn #tooltip {
-    height: 5vh !important; 
+    height: 35px !important; 
     width: 100% !important;
     line-height: 1.2 !important;
+  }
+
+  .footer-content p {
+    font-size: 0.85em
   }
 }
 
