@@ -34,7 +34,7 @@
 
 .content {
   width: 40vw;
-  margin: 12% auto 1% auto;
+  margin: 12% auto 2% auto;
   position: relative;
   background-color: rgb(255, 255, 255, 0.8);
   padding: 10px;
@@ -66,6 +66,13 @@
   border-radius: 20px;
   transform: translateY(0px);
   transition: transform .2s;
+  background-color: rgb(120, 0, 201);
+  border: none;
+}
+
+.button-Btn #isActive:hover {
+  background-color: rgb(150, 51, 216);
+
 }
 
 .button-Btn #isActive:hover {
