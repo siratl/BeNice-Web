@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import { Button } from 'reactstrap';
+import headerImage from './images/the5.png';
 
 function App() {
   return (
@@ -10,17 +11,19 @@ function App() {
       <div className="App-content">
         <section className="header">
           <h1>BNE Island</h1>
-          <nav>HOME</nav>
         </section>
 
-        <section className="content">
-          <h3>Nature | Nurture | Growth</h3>
-          <p>
-            Welcome to the BNE Island. The one stop shop for everything BeNice
-            Essentials, your newest obsession.
-          </p>
-          <p>Please select a branch to visit below.</p>
-        </section>
+        <div className="headerImage">
+          <img src={headerImage} alt="" />
+          <section className="content">
+            <h3>Nature | Nurture | Growth</h3>
+            <p>
+              Welcome to the BNE Island. The one stop shop for everything BeNice
+              Essentials, your newest obsession.
+            </p>
+            <p>Please select a branch to visit below.</p>
+          </section>
+        </div>
 
         <section className="button-Btn">
           <Button
