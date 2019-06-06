@@ -1,6 +1,23 @@
 .App {
   text-align: center;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App::before {
+  content: "";
+  background-image: url("../src/images/Benice-Favicon2.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;   
 }
 
 .App-header {
@@ -11,6 +28,7 @@
   top: 0;
   width: 100%;
   overflow: hidden;
+  z-index: 11;   
 
 }
 
@@ -19,9 +37,11 @@
 }
 
 .header h1 {
-  color: #b18e1d;
+  color: #B9844D;
   font-weight: 500;
-  margin-top: 7vh;
+  font-size: 1.9em;
+  margin: 7vh 0 2vh 0;
+  text-shadow: 1px 1px #7a7a7a;
 }
 
 .App-content {
@@ -36,33 +56,71 @@
   width: 40vw;
   margin: 12% auto 2% auto;
   position: relative;
-  background-color: rgb(255, 255, 255, 0.8);
-  padding: 10px;
+  background-color: rgb(255, 255, 255, 0.9);
+  padding: 20px 20px 30px 20px;
   border-radius: 4px;
+  box-shadow: 1px 1px 5px rgb(75, 75, 75);
+}
+
+@media only screen and (max-width: 700px){
+  .header h1 {
+    font-size: 1.5em;
+    margin: 5vh 0 2vh 0;
+  }
+
+  .content {
+    width: 60vw;
+    margin: 2% auto 2% auto;
+    font-size: 1rem;
+  }
+
+  .content h3 {
+    font-size: 1.2rem;
+  }
+
+  .App-content {
+    min-height: 80vh;
+    font-size: 1.2rem;
+    margin-top: 7vh;
+  }
+
+  .button-Btn {
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    width: 32vw;
+    margin: 0 auto;
+  }
+  /* Important added to change button properties for mobile view. Media query doesnt have an effect until used. */
+  .button-Btn #isActive {
+    height: 5vh !important; 
+    width: 100% !important;
+    line-height: 1.2 !important;
+  }
+
+  .button-Btn #tooltip {
+    height: 5vh !important; 
+    width: 100% !important;
+    line-height: 1.2 !important;
+  }
+}
+
+.content h3 {
+  color: rgb(120, 0, 201);
 }
 
 .button-Btn {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  width: 40vw;
+  width: 32vw;
   margin: 0 auto;
-
-}
-
-.button-Btn Button {
-  height: 4vh;
-  width: 9vw;
-  line-height: 1;
-  box-shadow: 2px 2px 5px black;
-  border-radius: 20px;
 }
 
 .button-Btn #isActive {
   height: 4vh;
-  width: 9vw;
+  width: 7vw;
   line-height: 1;
-  box-shadow: 2px 2px 5px black;
+  box-shadow: 2px 2px 2px rgb(46, 46, 46);
   border-radius: 20px;
   transform: translateY(0px);
   transition: transform .2s;
@@ -85,10 +143,19 @@
   line-height: 1;
   padding: 10px;
   margin: 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
 }
 
 .button-Btn #tooltip {
   position: relative;
+  height: 4vh;
+  width: 7vw;
+  line-height: 1;
+  box-shadow: 2px 2px 3px rgb(0, 0, 0);
+  border-radius: 20px;
 }
 
 .button-Btn #tooltip .tooltiptext {
