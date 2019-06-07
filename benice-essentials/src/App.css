@@ -29,9 +29,21 @@
   top: 0;
   width: 100%;
   overflow: hidden;
-  z-index: 11;   
-
+  z-index: 11;
+  display: flex;
+  align-items: center;
 }
+
+.App-header h2 {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  margin: 0 20px;
+  color: white;
+  font-size: 1.5em;
+  text-shadow: 1px 1px 2px black;
+}
+
 
 .header {
   font-family: 'Playfair Display', serif;
@@ -90,7 +102,6 @@
     height: 195px;
     width: 55vw !important;
     margin: 0 auto;
-    border: 1px solid red;;
   }
   /* Important added to change button properties for mobile view. Media query doesnt have an effect until used. */
   .button-Btn #isActive {
@@ -125,6 +136,10 @@
     margin-left: 10px;
     opacity: 0;
     transition: opacity 1s;
+  }
+
+  .App-header h2 {
+    justify-content: center;  
   }
   
 }
