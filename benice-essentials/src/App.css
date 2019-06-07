@@ -3,6 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  height: 100vh;
 }
 
 .App::before {
@@ -45,7 +46,6 @@
 }
 
 .App-content {
-  min-height: 100%;
   display: flex;
   flex-direction: column;
   font-size: 1.2em;
@@ -62,7 +62,7 @@
   box-shadow: 1px 1px 5px rgb(75, 75, 75);
 }
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px) {
   .header h1 {
     font-size: 1.5em;
     margin: 5vh 0 2vh 0;
@@ -79,7 +79,7 @@
   }
 
   .App-content {
-    min-height: 80vh;
+    min-height: 100vh ;
     font-size: 1.2rem;
     margin-top: 7vh;
   }
@@ -87,26 +87,46 @@
   .button-Btn {
     display: flex;
     flex-direction: column;
-    height: 180px;
-    width: 35vw;
+    height: 195px;
+    width: 55vw !important;
     margin: 0 auto;
+    border: 1px solid red;;
   }
   /* Important added to change button properties for mobile view. Media query doesnt have an effect until used. */
   .button-Btn #isActive {
-    height: 35px !important; 
+    height: 40px !important; 
     width: 100% !important;
-    line-height: 1.2 !important;
+    line-height: 1.4 !important;
+    transform: none !important;
   }
 
   .button-Btn #tooltip {
-    height: 35px !important; 
+    height: 40px !important; 
     width: 100% !important;
-    line-height: 1.2 !important;
+    line-height: 1.4 !important;
   }
 
   .footer-content p {
-    font-size: 0.85em
+    font-size: 0.8em
   }
+
+  .button-Btn #tooltip .tooltiptext {
+    visibility: hidden;
+    width: 180px !important;
+    border: 1px solid black;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: -100% !important;
+    left: 12% !important;
+    margin-left: 10px;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  
 }
 
 .content h3 {
@@ -145,9 +165,9 @@
   color: #000000;
   background-color: #e6e5eb;
   line-height: 1;
-  padding: 10px;
-  margin: 0;
+  padding: 20px 0px 0px 0px;
   position: fixed;
+  bottom: 0;
   bottom: 0;
   width: 100%;
   z-index: -1;
@@ -186,11 +206,9 @@
   background-color: white;
 }
 
-.headerImage {
-}
-
 .headerImage img {
   position: absolute;
   left: 0;
   width: 100%;
 }
+
