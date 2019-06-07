@@ -49,7 +49,7 @@ function App() {
               </Button>
               <Button id="tooltip" color="secondary" size="2x" disabled>
                 Blog
-                <span class="tooltiptext">Coming soon!</span>
+                <span className="tooltiptext">Coming soon!</span>
               </Button>
             </section>
           </section>
