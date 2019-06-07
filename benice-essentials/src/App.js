@@ -12,12 +12,12 @@ function App() {
           <h1>BNE Island</h1>
         </section>
         <div className="headerImage">
-          <img src={headerImage} alt="" />
+          <img src={headerImage} alt="BeNice Essentials products" />
           <section className="content">
             <h3>Nature | Nurture | Growth</h3>
             <p>
-              Welcome to your newest obsession, BNE Island. The one stop shop
-              for everything BeNice Essentials!
+              Welcome to your newest obsession, BNE Island. Terminal for
+              everything BeNice Essentials!
             </p>
             <section className="button-Btn">
               <Button
@@ -56,7 +56,7 @@ function App() {
         </div>
       </div>
       <footer className="footer-content">
-        <p>&copy; Copyright 2019 BeNice Essentials - All Right Reserved</p>
+        <p>&copy; Copyright 2019 BeNice Essentials - All Rights Reserved</p>
       </footer>
     </div>
   );
