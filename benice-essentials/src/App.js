@@ -16,6 +16,7 @@ function App() {
         </section>
         <div className="headerImage">
           <img src={headerImage} alt="BeNice Essentials products" />
+
           <section className="content">
             <h3>Nature | Nurture | Growth</h3>
             <p>Welcome to your newest obsession. Where would you like to go?</p>

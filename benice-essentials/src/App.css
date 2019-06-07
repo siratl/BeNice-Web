@@ -74,6 +74,8 @@
   box-shadow: 1px 1px 5px rgb(75, 75, 75);
 }
 
+
+/* FOR MOBILE */
 @media only screen and (max-width: 700px) {
   .header h1 {
     font-size: 1.5em;
@@ -133,6 +135,63 @@
     z-index: 1;
     bottom: -100% !important;
     left: 12% !important;
+    margin-left: 10px;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+
+  .App-header h2 {
+    justify-content: center;  
+  }
+  
+}
+
+/* FOR TABLET */
+@media only screen and (max-width: 1024px) and (min-width: 800px) {
+  .content {
+    width: 70%;
+    margin: 10% auto 2% auto;
+    font-size: 1rem;
+  }
+
+  .content p:first-of-type {
+    font-size: 1.2rem;
+  }
+
+  .button-Btn {
+    display: flex;
+    width: 50vw !important;
+  }
+  /* Important added to change button properties for tablet view. Media query doesnt have an effect until used. */
+  .button-Btn #isActive {
+    height: 40px !important; 
+    width: 22% !important;
+    line-height: 1.8 !important;
+    transform: none !important;
+  }
+
+  .button-Btn #tooltip {
+    height: 40px !important; 
+    width: 22% !important;
+    line-height: 1.8 !important;
+  }
+
+  .footer-content p {
+    font-size: 0.9em
+  }
+
+  .button-Btn #tooltip .tooltiptext {
+    visibility: hidden;
+    width: 180px !important;
+    border: 1px solid black;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: -120% !important;
+    left: 5% !important;
     margin-left: 10px;
     opacity: 0;
     transition: opacity 1s;
